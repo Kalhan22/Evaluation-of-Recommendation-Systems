@@ -3,7 +3,7 @@
 detach("package:RMySQL", unload=TRUE)
 detach("package:sqldf", unload=TRUE)
 library(RMySQL)
-con <- dbConnect(MySQL(),user="root", password="*****",dbname="dwh", host="localhost")
+con <- dbConnect(MySQL(),user="****", password="*****",dbname="***", host="localhost")
 rs <- dbSendQuery(con, "select * from DWH.CB_PERCENTILE;")
 data <- fetch(rs,n = -1)
 
