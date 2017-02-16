@@ -6,9 +6,9 @@
 ##Methodology: Get Top 50 Recommendations from the list. Check on the training set
 install.packages('sqldf')
 library(sqldf)
-all_movie_data <- read.csv("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/FACT_RATING_PUSHED.csv")
+all_movie_data <- read.csv("<Location>/FACT_RATING_PUSHED.csv")
 
-setwd("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project")
+setwd("<Location>")
 data_cb <- read.csv("validation_CB_movie_rating_short.csv")
 nrow(data_cb)
 require(plyr)
@@ -44,7 +44,7 @@ sqrt(sum(merged_data_subset_clean$diff*merged_data_subset_clean$diff)/nrow(merge
 ##Measuring Diversity Scores fr Each Recommendation
 
 ##Content Based Recommendation System
-setwd("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project")
+setwd("<Location>")
 data_cb <- read.csv("CB_wts.csv")
 
 require(plyr)
