@@ -6,9 +6,9 @@
 ##Methodology: Get Top 100 Recommendations from the list. Check on the training set
 install.packages('sqldf')
 library(sqldf)
-all_movie_data <- read.csv("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/FACT_RATING_PUSHED.csv")
+all_movie_data <- read.csv("<Location>/FACT_RATING_PUSHED.csv")
 
-setwd("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project")
+setwd("<Location>")
 data_cb <- read.csv("validation_CB_movie_rating_short.csv")
 nrow(data_cb)
 require(plyr)
