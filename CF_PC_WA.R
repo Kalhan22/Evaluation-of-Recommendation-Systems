@@ -18,8 +18,8 @@ sqrt(sum(merged_data_subset_clean$diff*merged_data_subset_clean$diff)/nrow(merge
 #Precision
 ##Methodology: Get Top 50 Recommendations from the list. Check on the training set
 
-setwd("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project")
-final_dataset_2 <- read.csv("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/output_300.csv",sep = " ")
+setwd("<Location>")
+final_dataset_2 <- read.csv("<Location>/output_300.csv",sep = " ")
 final_data_interim <- sqldf("select user_id,movie_id,chile as child_movie_id,wt from all_movie_data as a join final_dataset_2 as b on (a.movie_id = b.Parent)")
 
 
@@ -38,7 +38,7 @@ x
 
 
 #Diversity
-final_dataset_2 <- read.csv("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/output_300.csv",sep = " ")
+final_dataset_2 <- read.csv("<Location>/output_300.csv",sep = " ")
 final_data_interim <- sqldf("select user_id,movie_id,chile as child_movie_id,wt from all_movie_data as a join final_dataset_2 as b on (a.movie_id = b.Parent)")
 
 require(plyr)
@@ -101,7 +101,7 @@ print(sum/length(num_row))
 
 
 #Novelty
-final_dataset_2 <- read.csv("/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/output_300.csv",sep = " ")
+final_dataset_2 <- read.csv("<Location>/output_300.csv",sep = " ")
 final_data_interim <- sqldf("select user_id,movie_id,chile as child_movie_id,wt from all_movie_data as a join final_dataset_2 as b on (a.movie_id = b.Parent)")
 
 require(plyr)
