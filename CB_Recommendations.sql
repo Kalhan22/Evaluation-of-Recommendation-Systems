@@ -13,7 +13,7 @@ genre VARCHAR(100) NOT NULL
  
 ##Loading Data from the .CSV File
 LOAD DATA LOCAL INFILE 
-'/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/ml-latest-small/movies.csv' 
+'<Location>/movies.csv' 
 INTO TABLE dwh.dim_movies_raw FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' LINES TERMINATED BY '\n';
 
@@ -27,7 +27,7 @@ genre VARCHAR(100) NOT NULL
  
 ##Loading Data from the .CSV File
 LOAD DATA LOCAL INFILE 
-'/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/ml-latest-small/movies.csv' 
+'<Location>/movies.csv' 
 INTO TABLE dwh.dim_movies_raw FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' LINES TERMINATED BY '\n';
 
@@ -236,7 +236,7 @@ timestamp BIGINT NOT NULL
 
 ##Loading Data from the .CSV File
 LOAD DATA LOCAL INFILE 
-'/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/ml-latest-small/ratings.csv' 
+'<Location>/ratings.csv' 
 INTO TABLE dwh.fact_ratings FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' LINES TERMINATED BY '\n';
 
@@ -267,7 +267,7 @@ tag VARCHAR(30)
 
 ##Loading Data from the .CSV File
 LOAD DATA LOCAL INFILE 
-'/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/ml-20m/genome-tags.csv' 
+'<Location>/genome-tags.csv' 
 INTO TABLE dwh.dim_tags FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' LINES TERMINATED BY '\n';
 
@@ -282,7 +282,7 @@ relevance FLOAT
 
 ##Loading Data from the .CSV File
 LOAD DATA LOCAL INFILE 
-'/Users/Kalhan/Desktop/Waterloo Data/CS 846/CS 846 Project/ml-20m/fact_tagsgenome-scores.csv' 
+'<Location>/genome-scores.csv' 
 INTO TABLE dwh.dim_genome_scores FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' LINES TERMINATED BY '\n';
 
